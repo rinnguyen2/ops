@@ -12,3 +12,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: myapp
+  syncPolicy:
+    syncOptions:
+      - CreateNamespcae=true
+    automated:
+      selfHeal: true
+      prune: true
