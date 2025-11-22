@@ -1,0 +1,10 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+helmCharts:
+- name: myapp
+  releaseName: myapp
+  version: 0.1.0
+  repo: ""
+  valuesFile: values.yaml
+  includeCRDs: false
